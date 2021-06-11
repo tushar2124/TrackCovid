@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1 align : center> Covid 19 Cases till <p Date : th:text="${localdate}"></p></h1>
+
+<div>
+<table border="1" width="100%">
+    <tr>
+        <th>Total Cases</th>
+        <th>Active Cases</th>
+        <th>Discharged</th>
+        <th>Deaths</th>
+    </tr>
+    <tr>
+        <td th:text="${TOTALCASES}"></td>
+        <td th:text="${ACTIVECASES}"></td>
+        <td th:text="${DISCHARGED}"></td>
+        <td th:text="${DEATHS}"></td>
+    </tr>
+</table>
+</div>
+<br>
+<br>
+<br>
+<div>
+    <table border="1" width="100%">
+        <tr>
+            <th>Todays cases</th>
+            <th>Todays deaths</th>
+            <th>Todays Dishcarged</th>
+        </tr>
+        <tr>
+            <td th:text="${TODAYSACTIVECASES}"></td>
+            <td th:text="${TODAYSDEATHS}"></td>
+            <td th:text="${TODAYSDISCHARGED}"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
